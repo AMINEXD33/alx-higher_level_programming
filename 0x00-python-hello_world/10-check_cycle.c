@@ -12,6 +12,8 @@ int check_cycle(listint_t *list)
 	struct listint_s *slow_p = list;
 	int flag;
 
+	if (list == NULL)
+		return (0);
 	flag = 0;
 	while (1)
 	{
