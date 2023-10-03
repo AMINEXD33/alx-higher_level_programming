@@ -13,10 +13,9 @@ listint_t *insert_node(listint_t **head, int number)
 	struct listint_s *node = malloc(sizeof(listint_t));
 	struct listint_s *tracker = *head;
 	struct listint_s *step_back = NULL;
-	int flag = 0;
 
 	if (tracker->n > number)
-		flag = 1;
+		node->next = *head;
 	node->n = number;
 	node->next = NULL;
 	/*if head is null , return null*/
@@ -40,8 +39,6 @@ listint_t *insert_node(listint_t **head, int number)
 		node->next = tracker;
 		step_back->next = node;
 	}
-	if (flag == 1)
-		return(node);
 	return (*head);
 
 }
