@@ -16,9 +16,6 @@ listint_t *insert_node(listint_t **head, int number)
 
 	node->n = number;
 	node->next = NULL;
-	/*if head is null , return null*/
-	if (*head == NULL)
-		return (NULL);
 	/*finding the spot where number < tracker->n*/
 	while (tracker->n < number && tracker != NULL)
 	{
