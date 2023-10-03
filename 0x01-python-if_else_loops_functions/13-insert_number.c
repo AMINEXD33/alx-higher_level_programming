@@ -15,7 +15,10 @@ listint_t *insert_node(listint_t **head, int number)
 	struct listint_s *step_back = NULL;
 
 	if (tracker->n > number)
+	{
 		node->next = *head;
+		return (node);
+	}
 	node->n = number;
 	node->next = NULL;
 	/*if head is null , return null*/
