@@ -4,5 +4,5 @@ def islower(c):
         return True
     elif (c == ''):
         raise Exception
-    else: 
+    else:
         return False
