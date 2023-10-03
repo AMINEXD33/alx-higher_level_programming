@@ -5,6 +5,3 @@ def islower(c):
     elif (c == ''):
         raise Exception
     else: return False
-
-
-print(islower(''))
