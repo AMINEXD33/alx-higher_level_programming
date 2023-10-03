@@ -5,5 +5,3 @@ def islower(c):
     elif (c == ''):
         exit(-1)
     else: return False
-
-print(islower(''))
