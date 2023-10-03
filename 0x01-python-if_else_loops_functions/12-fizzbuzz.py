@@ -6,4 +6,4 @@ def fizzbuzz():
         elif (x % 2 == 0):
             print("{} Buzz".format(x), end=" ")
         else:
-            print("{}".format(x))
+            print("{}".format(x), end=" ")
