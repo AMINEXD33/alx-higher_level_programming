@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def no_c(my_string):
+def no_c (my_string):
     new_str = ""
 
     for x in range(len(my_string)):
