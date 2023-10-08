@@ -12,6 +12,9 @@ int is_palindrome(listint_t **head)
 	long long int forward;
 	long long int reverce;
 
+	if (*head == NULL)
+		return (1);
+
 	forward = 1;
 	reverce = 1;
 	while (node != NULL)
