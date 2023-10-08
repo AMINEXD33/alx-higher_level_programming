@@ -1,9 +1,14 @@
 #include "lists.h"
 #include <stdio.h>
-
+/**
+ *is_palindrome-this function checks if
+ *a a linkd list is palindrome.
+ *@head: the head of the linked list
+ *Return: 0 if it's not a palindrome, 1 if it is
+ */
 int is_palindrome(listint_t **head)
 {
-	struct listint_s *node = *head; 
+	struct listint_s *node = *head;
 	long long int forward;
 	long long int reverce;
 
