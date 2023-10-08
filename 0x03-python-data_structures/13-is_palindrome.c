@@ -19,7 +19,7 @@ int is_palindrome(listint_t **head)
 
 	}
 	if (forward != reverce)
-		return (0)
+		return (0);
 
 	return (1);
 }
