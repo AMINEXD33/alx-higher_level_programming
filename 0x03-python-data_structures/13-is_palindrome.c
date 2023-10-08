@@ -21,13 +21,9 @@ int is_palindrome(listint_t **head)
 	{
 		forward = ((forward) + (node->n)) % sizeof(long long int) + 1;
 		reverce = ((reverce) + (node->n * -1)) % sizeof(long long int) + 1;
-
 		node = node->next;
-
-
 	}
 	if (forward != reverce)
 		return (0);
-
 	return (1);
 }
