@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "lists.h"
 /**
  * print_dlistint-print the values of nodes in a linked list
  * @h: head of the linked list
@@ -6,7 +7,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	struct dlistint_t *node = h;
+	const dlistint_t *node = h;
 	unsigned int count;
 
 
@@ -15,6 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
 	{
 		printf("%d\n", node->n);
 		node = node->next;
+		count++;
 	}
 	return (count);
 }
