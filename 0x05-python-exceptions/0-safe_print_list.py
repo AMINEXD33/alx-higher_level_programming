@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
     real_n = 0
-    try:
-        for y in range(x):
+    for y in range(x):
+        try:
+            print("{:d}".format(my_list[y]), end="")
             real_n += 1
-            print(my_list[y], end="")
-    except (OSError):
-        return (real_n)
+        except IndexError:
+            print()
+            return (real_n)
+    print()
     return (real_n)
