@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 class Square():
+    """
+        Desciption of a square
+    """
     def __init__(self, height, width):
         """
             Describe a square
