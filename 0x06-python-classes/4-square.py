@@ -2,7 +2,7 @@
 """SQUARE"""
 
 
-class Square(self, size=0):
+class Square():
     """ititiate the square size"""
     def __init__(self, size=0):
         """Initialize the size attr
@@ -24,10 +24,10 @@ class Square(self, size=0):
     @size.setter
     def size(self, value):
         """set a new value to the protected attr"""
-        if type(size) is not int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
             return
-        if size < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
             return
 
