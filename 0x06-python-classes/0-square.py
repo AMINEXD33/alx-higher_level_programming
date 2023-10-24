@@ -3,7 +3,7 @@ class Square():
     """
         Desciption of a square
     """
-    def __init__(self, height, width):
+    def __init__(self, height=0, width=0):
         """
             Describe a square
         param height: the height of the square
