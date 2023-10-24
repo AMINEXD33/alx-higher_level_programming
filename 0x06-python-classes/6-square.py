@@ -18,6 +18,21 @@ class Square():
         self.__position = position
 
     @property
+    def position(self):
+        return self.__position
+
+    @position.setter
+    def position(self, position=(0, 0)):
+        """set a new value to the protected attr"""
+        if type(position[0]) is not int or type(position[1] is not int):
+            raise TypeError("size must be an integer")
+            return
+        if position[0] < 0 or position[1]:
+            raise ValueError("size must be >= 0")
+            return
+        self.__position = position
+
+    @property
     def size(self):
         """get the value of the protected attr"""
         return self.__size
