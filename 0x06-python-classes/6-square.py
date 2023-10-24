@@ -61,11 +61,11 @@ class Square():
         if the size is 0 , this function
         will print nothing
         """
-        if (self.__position[1] != 0):
-            print("\n"*self.__position[1], end="")
-        if self.__size == 0:
+        if (self.__size == 0):
             print()
             return
+        if (self.__position[1] != 0):
+            print("\n"*self.__position[1], end="")
         else:
             for x in range(self.__size):
                 if (self.__position[0] != 0):
