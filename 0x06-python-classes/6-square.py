@@ -25,11 +25,11 @@ class Square():
     def position(self, position=(0, 0)):
         """set a new value to the protected attr"""
         if type(position[0]) is not int or type(position[1] is not int):
-            if (position[0] < 0 or position[1] < 0):
-                raise TypeError("position must be a tuple of 2 positive integers")
-                return
             raise TypeError("position must be a tuple of 2 positive integers")
-
+            return
+        if (position[0] < 0 or position[1] < 0):
+            raise TypeError("position must be a tuple of 2 positive integers")
+            return
         self.__position = position
 
     @property
