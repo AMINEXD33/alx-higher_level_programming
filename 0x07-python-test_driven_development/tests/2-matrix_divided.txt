@@ -1,0 +1,37 @@
+# The `2-matrix_divided` Module
+## Using `matrix_divided`
+
+This is an example of using `matrix_divided` from the `2-matrix_divided` module:
+```python
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+#divide by zero
+>>> matrix_divided([[1,2,3],[4,5,6]], 0)
+Traceback (most recent call last):
+	...
+ZeroDivisionError: division by zero
+
+#one element is Null
+>>> matrix_divided([[1,2,None],[4,5,6]], 12)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of untegers/floats
+
+#len of one list is 0
+>>> matrix_divided([[],[1,2,3]], 0)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
+
+
+#len of one list is 0
+>>> matrix_divided([[1,2,3],[]], 0)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
+
+#len of one list is bigger then the other
+>>> matrix_divided([[1,2,3],[4,5,6,7,8]], 0)
+Traceback (most recent call last):
+	...
+TypeError: Each row of the matrix must have the same size
