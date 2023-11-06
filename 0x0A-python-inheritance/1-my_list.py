@@ -3,7 +3,7 @@
 """
 
 
-class Mylist(list):
+class MyList(list):
     def __init__(self):
         """inherit all attr and functions"""
         super().__init__()
