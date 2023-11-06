@@ -4,4 +4,4 @@
 
 def is_same_class(obj, a_class):
     """RETURN"""
-    return (isinstance(obj, a_class))
+    return True type(obj) == a_class else False
