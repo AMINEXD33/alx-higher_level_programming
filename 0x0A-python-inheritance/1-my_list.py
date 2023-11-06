@@ -4,10 +4,7 @@
 
 
 class MyList(list):
-    def __init__(self):
-        """inherit all attr and functions"""
-        super().__init__()
-
+    """inherit all attr and functions"""
     def print_sorted(self):
         """print a sorted list"""
 
