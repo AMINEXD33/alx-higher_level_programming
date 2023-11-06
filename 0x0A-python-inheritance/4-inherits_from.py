@@ -4,5 +4,5 @@
 
 def inherits_from(obj, a_class):
     """Return"""
-
-    return True if (issubclass(obj, a_class)) else False
+    
+    return True if (issubclass(type(obj), a_class)) else False
