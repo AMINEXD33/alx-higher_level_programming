@@ -11,7 +11,7 @@ class Student():
 
     def to_json(self, attrs=None):
         """make dict"""
-        #load dict
+        # load dict
         dict_ = self.__dict__.copy()
         if type(attrs) is list:
             for x in attrs:
@@ -25,4 +25,3 @@ class Student():
                         tmp_[i] = dict_[i]
             return (tmp_)
         return (dict_)
-
