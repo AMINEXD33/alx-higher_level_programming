@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Read files and stuff"""
+
 
 def read_file(filename=""):
     """Read a file UNC=utf-8"""
