@@ -17,8 +17,12 @@ class Helper_functions():
         var_list = ["width", "height", "x", "y"]
         if (type(var) is not int):
             raise TypeError(f"{var_list[index]} must be an integer")
-        if (var < 0):
-            raise ValueError(f"{var_list[index]} must be > 0")
+        if (var_list[index] == "x" or var_list[index] == "y"):
+            if (var < 0):
+                raise ValueError(f"{var_list[index]} must be >= 0")
+        else:
+            if (var <= 0):
+                raise ValueError(f"{var_list[index]} must be > 0")
 
 
 class Rectangle(Base):
@@ -33,7 +37,6 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """constructor for the Rectangle class"""
-        super().__init__(id)
         # check the vars
         Helper_functions.validate_int(width, 0)
         Helper_functions.validate_int(height, 1)
@@ -43,6 +46,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
     # getters
     @property
