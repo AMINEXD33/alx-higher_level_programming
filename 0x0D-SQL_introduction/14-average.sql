@@ -1,5 +1,3 @@
 -- get teh average of scores from a table
-
-SELECT AVG(score) AS `_AVG_`
+SELECT AVG(score) AS `average`
 FROM second_table;
-
