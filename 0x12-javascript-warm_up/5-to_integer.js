@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const { argv } = require('node:process');
 
 const PotentialNnum = parseInt(argv[2]);
