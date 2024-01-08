@@ -1,6 +1,2 @@
 #!/usr/bin/node
-const { argv } = require('node:process');
-
-try {
-  console.log(argv[2], 'is', argv[3]);
-} catch {}
+console.log(process.argv[2] + ' is ' + process.argv[3]);

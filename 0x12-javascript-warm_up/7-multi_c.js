@@ -1,18 +1,11 @@
 #!/usr/bin/node
-const { argv } = require('node:process');
-
-function ToNum () {
-  const PotentialNnum = parseInt(argv[2]);
-  if (isNaN(PotentialNnum)) {
-    console.log('Missing number of occurrences');
-    return (false);
-  } else {
-    return (PotentialNnum);
-  }
-}
-const Num = ToNum();
-if (Num !== false) {
-  for (let x = 0; x < Num; x++) {
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
+  console.log('Missing number of occurrences');
+} else {
+  const x = Number(process.argv[2]);
+  let i = 0;
+  while (i < x) {
     console.log('C is fun');
+    i++;
   }
 }
