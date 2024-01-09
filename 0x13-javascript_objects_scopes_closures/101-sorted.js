@@ -1,16 +1,17 @@
 #!/usr/bin/node
+const dict = require('./101-data').dict;
 
-const dict = require('./100-data.js').dict;
-const newMap = new Map();
-for (const vals of dict.values()) {
-  const val = vals[0];
-  const key = vals[1];
-  if (newMap.has(key)) {
-    const tmparr = newMap.get(key);
-    tmparr.push(val);
-    newMap.set(key, tmparr);
-  } else {
-    newMap.set(key, [val]);
+const totalist = Object.entries(dict);
+const vals = Object.values(dict);
+const valsUniq = [...new Set(vals)];
+const newDict = {};
+for (const j in valsUniq) {
+  const list = [];
+  for (const k in totalist) {
+    if (totalist[k][1] === valsUniq[j]) {
+      list.unshift(totalist[k][0]);
+    }
   }
+  newDict[valsUniq[j]] = list;
 }
-console.log(newMap);
+console.log(newDict);
