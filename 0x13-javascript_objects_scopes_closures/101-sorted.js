@@ -4,7 +4,7 @@ const dict = require('./100-data.js').dict;
 const newMap = new Map();
 for (const vals of dict.values()) {
   const val = vals[0];
-  const key = vals[1].toString();
+  const key = vals[1];
   if (newMap.has(key)) {
     const tmparr = newMap.get(key);
     tmparr.push(val);
