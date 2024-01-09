@@ -18,7 +18,4 @@ class Rectangle {
     }
   }
 }
-
-const ob = new Rectangle(2, 3);
-ob.print();
 module.exports = Rectangle;
