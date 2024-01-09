@@ -1,12 +1,16 @@
 #!/usr/bin/node
 
 exports.esrever = function (list) {
-  // they cou've made it harder by
-  // asking to sort in place
-  const EmptyList = [];
-  for (let x = list.length; x >= 0; x--) {
-    EmptyList.push(list[x]);
+  let pointera = 0;
+  let pointerb = list.length - 1;
+
+  while (pointera !== pointerb && pointera < pointerb) {
+    const tmp = list[pointera];
+    list[pointera] = list[pointerb];
+    list[pointerb] = tmp;
+
+    pointera++;
+    pointerb--;
   }
-  list = EmptyList;
   return (list);
 };
