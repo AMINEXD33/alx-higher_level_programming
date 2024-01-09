@@ -7,5 +7,6 @@ exports.esrever = function (list) {
   for (let x = list.length; x > 0; x--) {
     EmptyList.push(list[x]);
   }
-  return (EmptyList);
+  list = EmptyList;
+  return (list);
 };
