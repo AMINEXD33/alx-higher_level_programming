@@ -8,14 +8,17 @@ class Rectangle {
     }
   }
 
-  print (a, b) {
-    for (let x = 0; x < b; x++) {
+  print () {
+    for (let x = 0; x < this.height; x++) {
       let txt = '';
-      for (let y = 0; y < a; y++) {
+      for (let y = 0; y < this.width; y++) {
         txt += 'X';
       }
       console.log(txt);
     }
   }
 }
+
+const ob = new Rectangle(2, 3);
+ob.print();
 module.exports = Rectangle;
