@@ -1,3 +1,3 @@
 #!/bin/bash
 # show all allowed methods
-curl -sX OPTIONS $1
+curl -sX OPTIONS "$1"
