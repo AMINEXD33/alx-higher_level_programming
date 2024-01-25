@@ -1,3 +1,3 @@
 #!/bin/bash
 # show all allowed methods
-curl -sX OPTIONS "$1"
+var=$( curl -sIX OPTIONS $1 ); echo "$var"  | grep -Po '(?<=Allow: ).*'
