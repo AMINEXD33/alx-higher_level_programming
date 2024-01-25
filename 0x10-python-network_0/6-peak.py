@@ -5,6 +5,10 @@
 
 
 def find_peak(list_of_integers):
+    """
+        find the peak in order O(log(n))
+        since we're using binary aproach
+    """
 
     ls = list_of_integers
     ls
