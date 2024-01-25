@@ -2,6 +2,8 @@
 """find_peak
     @pram list_of_integers: a list of integers
 """
+
+
 def find_peak(list_of_integers):
 
     # to store the results
