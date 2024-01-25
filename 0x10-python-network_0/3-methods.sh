@@ -1,3 +1,3 @@
 #!/bin/bash
-# show all allowed methods
-var=$( curl -sIX OPTIONS "$1" ); echo "$var"  | grep -Po '(?<=Allow: ).*'
+# get the body of a 200 status request only
+curl -sIX OPTIONS $1 | grep -Po '(?<=Allow: ).*'
