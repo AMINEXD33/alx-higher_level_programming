@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
- a script that accepts a URL as input, 
- sends a request to the provided URL, 
- and exhibits the decoded utf-8 body of the response. 
- In cases where the HTTP status code is equal to or exceeds 400, 
- print: "Error code:" followed by the HTTP status code value.
+ a script that accepts a URL as input,
+ sends a request to the provided URL,
+ and exhibits the decoded utf-8 body of the response.
+ In cases where the HTTP status code is equal to or exceeds 400,
+ print: "Error code:" followed by the HTTP status code value
 """
 import sys
 import requests

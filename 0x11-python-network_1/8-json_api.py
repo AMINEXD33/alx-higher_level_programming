@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
- a script that accepts a letter, 
- then initiates a POST request to 
- http://0.0.0.0:5000/search_user with the letter as a 
+ a script that accepts a letter,
+ then initiates a POST request to
+ http://0.0.0.0:5000/search_user with the letter as a
  parameter stored in the variable q. If no argument is provided, set q="".
- If the response body is both properly formatted as JSON and not empty, present t
- he id and name in the format: "[<id>] <name>". 
- In case the JSON is invalid, display "Not a valid JSON", 
- and if the JSON is empty, display "No result".
+ If the response body is both properly formatted as JSON and not empty, present
+ the id and name in the format: "[<id>] <name>".
+ In case the JSON is invalid, display "Not a valid JSON",
+ and if the JSON is empty, display "No result"
 """
 import sys
 import requests
