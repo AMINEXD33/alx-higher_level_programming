@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-get the value of a variable [X-Request-Id] 
+get the value of a variable [X-Request-Id]
 found in the head of a response
 """
 import requests
