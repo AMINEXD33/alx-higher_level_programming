@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-a python script that gets the value of a header variable [ X-Request-Id ]
-from a response and display it int the console
+Python script that takes in a URL, sends a request to the URL and displays
+the value of the X-Request-Id variable found in the header of the response.
 """
 import urllib.request
 import sys
