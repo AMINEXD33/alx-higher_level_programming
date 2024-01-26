@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 a python script that gets the value of a header variable [ X-Request-Id ]
-from a response
+from a response and display it int the console
 """
 import urllib.request
 import sys
