@@ -1,9 +1,7 @@
 #!/usr/bin/node
 
-// let request = require("./request-master/request");
 const fs = require('fs');
 const { argv } = require('node:process');
-
 const fileName = argv[2];
 const fileContent = argv[3];
 
