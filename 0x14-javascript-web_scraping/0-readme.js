@@ -16,6 +16,6 @@ function read (fileName) {
   fs.readFile(fileName, 'utf-8', showContent);
 }
 
-if (argv.length === 3) {
+if (argv.length >= 3) {
   read(argv[2]);
 }
