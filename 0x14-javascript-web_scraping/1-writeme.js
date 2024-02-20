@@ -12,6 +12,4 @@ function writeFile (fileName, fileContent) {
   });
 }
 
-if (argv.length >= 4) {
-  writeFile(argv[2], argv[3]);
-}
+writeFile(argv[2], argv[3]);

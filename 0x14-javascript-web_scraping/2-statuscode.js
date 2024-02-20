@@ -11,6 +11,4 @@ function getCode (URL) {
   });
 }
 
-if (argv.length >= 3) {
-  getCode(argv[2]);
-}
+getCode(argv[2]);
