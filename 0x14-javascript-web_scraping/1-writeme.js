@@ -4,7 +4,7 @@
 const fs = require('fs');
 const { argv } = require('node:process');
 
-function writeFile (fileName, fileContent) {
+function writeFfile (fileName, fileContent) {
   fs.writeFile(fileName, fileContent, 'utf-8', (err) => {
     if (err) {
       console.log(err);
@@ -12,4 +12,4 @@ function writeFile (fileName, fileContent) {
   });
 }
 
-writeFile(argv[2], argv[3]);
+writeFfile(argv[2], argv[3]);
