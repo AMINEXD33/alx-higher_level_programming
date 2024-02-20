@@ -7,9 +7,8 @@ function getCode (URL) {
   request(URL, 'GET', function (error, response, body) {
     if (!error) {
       console.log('code: ', response && response.statusCode);
-    }
-    else{
-    	console.log(error);
+    } else {
+      console.log(error);
     }
   });
 }
