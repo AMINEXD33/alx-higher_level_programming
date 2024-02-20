@@ -5,10 +5,10 @@ const { argv } = require('node:process');
 
 function getCode (URL) {
   request(URL, function (error, response) {
-    if (!error) {
-      console.log('code: ', response && response.statusCode);
-    } else {
+    if (error) {
       console.log(error);
+    } else {
+      console.log('code: ', response && response.statusCode);
     }
   });
 }
